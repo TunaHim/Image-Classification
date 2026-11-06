@@ -8,3 +8,14 @@ The goal of the project is to build an Artificial Neural Network that recognizes
 +	Finally, use the same pretrained MobileNet architecture as base model, include the three new classes, add dense hidden layer, tune hyperparameters, etc. Compile and fit the model, check the prediction and validation loss and finally predict few images.
 +	ResNet-50 architecture is also used, same like MobileNet architecture, just for comparison.
 +	Save the model for future use and identify limitations of the project.
+
+## Data sources and access
+
+| Data | Source | Format |
+|---|---|---|
+| Own image set: three classes (bottle, flask, lunchbox), about 100 webcam photos each | Captured by the author | PNG images in `images/`, one folder per class, read with Keras `flow_from_directory` |
+| Pretrained weights (MobileNet, ResNet-50) | Keras Applications (ImageNet) | downloaded automatically by Keras |
+
+## Licence
+
+Code: MIT, see [LICENSE](LICENSE). Data: see *Data sources and access*; third-party data keep their own terms.
